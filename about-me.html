@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>about me</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* judul */
+    .judul-konten {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30px;
+    }
+    .judul-konten h1 {
+      text-transform: capitalize;
+    }
+    
+    /* gambar */
+    figure img {
+      width: 200px;
+    }
+    figure {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    /* tentang saya */
+    main {
+      margin: 0 20px;
+      margin-bottom: 30px;
+    }
+    
+    p {
+      text-indent: 20px;
+      flex-wrap: wrap;
+    }
+    mark {
+      text-transform: capitalize;
+      background-color: white;
+      text-decoration: underline;
+    }
+           /* desktop */
+    @media(min-width: 992px) {
+      /* judul */
+      .judul-konten {
+        margin-bottom: 40px;
+      }
+      .judul-konten h1 {
+        font-size: 70px;
+      }
+      .judul-konten h4 {
+        font-size: 30px;
+      }
+      
+      /* layout */
+      .about-layout {
+        display: flex;
+        flex-direction: row;
+        margin: 0 50px;
+        gap: 40px;
+      }
+      figure {
+        order: 2;
+        width: auto;
+      }
+      figure img {
+        width: 250px;
+      }
+      main {
+        order: 1;
+      }
+      main article p {
+        font-size: 20px;
+        line-height: 1.7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="#">about me</a></li>
+      <li><a href="contact-me.html">contact me</a></li>
+    </ul>
+  </div>
+  
+  <!-- konten -->
+  <div class="konten-about">
+    <div class="container-about">
+      <!-- judul -->
+      <div class="judul-konten">
+        <h4>about me</h4>
+        <h1>andika satria O.</h1>
+      </div>
+     
+     <!-- layout --> 
+      <div class="about-layout">
+        <!-- gambar -->
+        <figure>
+          <img src="foto_saya.jpg" alt="muka saya">
+        </figure>
+        
+        <!-- tentang saya -->
+        <main>
+          <article>
+            <p>
+              saya dalah seorang siswa kelas 9 di sekolah smpn 1 sumber yang memiliki ketertarikan terhadap bidang web development.saya sedang aktif mempelajari html dan css, serta membangun website saya sendiri menggunakan perangkat <mark>android</mark> dengan menggunakan code editor <mark>acode.</mark>
+            </p>
+            <br>
+            <p>
+              dalam proses belajar saya, saya terbiasa belajar dari video tutorial lalu langsung mempraktekkannya, sehingga lebih mudah memahami konsep yang ada di tutorial tersebut. saya tertarik mengembangkan kemampuan desain dan layout website agar tampil rapi, responsif, dan mudah digunakan.
+            </p>
+            <br>
+            <p>
+              kedepannya, saya memiliki tujuan untuk menjadi <mark>fullstack developer dan web3 developer profesional,</mark> mampu membuat website sendiri, termasuk untuk kebutuhan sekolah maupun lingkungan sekitarnya
+            </p>
+          </article>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
