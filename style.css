@@ -69,11 +69,13 @@ a {
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  filter: grayscale(1);
 }
 .container:hover {
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+  filter: grayscale(0);
 }
 
 /* footer */
